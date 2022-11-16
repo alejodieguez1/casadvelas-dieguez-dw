@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="%PUBLIC_URL%/img/nav-logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Velas fabricadas en casa con cera de soja y productos de decoracion para tu hogar">
+    <title>Casa D Velas - Home</title>
+  </head>
+  <body>
+    <div class="body-container">
+        <header id="header-section">
+          <nav id="nav-section"> <!--- Contenedor de navbar ---> 
+              <img src="assets/casadvelas-2.png" alt="Casa D Velas logo principal"> <!--- Logo de la empresa iria aqui --->
+              <input type="checkbox" id="hmb-menu" class="hmb-menu">
+              <label for="hmb-menu" class="hmb-label">
+                  <span class="bar bar1"></span>
+                  <span class="bar bar2"></span>
+                  <span class="bar bar3"></span>
+              </label>
+              <ul class="nav-ul">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="products-class">
+                      <a href="pages/products.html">Productos</a>
+                      <ul class="sublist">
+                          <li><a href="#">Velas</a></li>  <!--- El href no esta enlazado debido a posibles modificaciones --->
+                          <li><a href="#">Refill</a></li>
+                          <li><a href="#">Cocina</a></li>
+                          <li><a href="#">Botellones</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="pages/cart.html">Carrito</a></li>
+                  <li><a href="pages/contact.html">Contacto</a></li>
+              </ul>
+            </nav>
+        </header>
+        <main id="main-section">
+            <div class="main-container parallax"> <!--- Contenedor de seccion principal con fondo de pantalla en efecto parallax--->
+                <h1>CASA D VELAS</h1>
+            </div>
+        </main>
+        <section id="slider-section">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/product-1.jpg" class="d-block w-100" alt="Tarjetas con palabras clave">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/product-4.jpg" class="d-block w-100" alt="Botellita para guardar oregano">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/product-3.jpg" class="d-block w-100" alt="Vela redonda profunda">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>      
+        <footer id="footer-section">
+          <div class="footer-bar"></div>
+          <div class="footer-container"> <!--- Contenedor de footer --->
+              <img src="assets/casadvelas-2.png" alt="Casa D Velas logo principal">
+              <div class="social-logos">
+                  <a href="https://www.facebook.com/casadvelashome" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/casadvelas/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=%2B543816436565" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
+          </div>
+      </footer>
+    </div>
+</html>

@@ -6,35 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Velas fabricadas en casa con cera de soja y productos de decoracion para tu hogar">
     <script src="https://kit.fontawesome.com/ba8747a913.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/styles/normalize.css">
+    
     <title>Casa D Velas - Home</title>
   </head>
   <body>
     <div class="body-container">
         <header id="header-section">
-          <nav id="nav-section"> <!--- Contenedor de navbar ---> 
-              <img src="assets/casadvelas-2.png" alt="Casa D Velas logo principal"> <!--- Logo de la empresa iria aqui --->
-              <input type="checkbox" id="hmb-menu" class="hmb-menu">
-              <label for="hmb-menu" class="hmb-label">
-                  <span class="bar bar1"></span>
-                  <span class="bar bar2"></span>
-                  <span class="bar bar3"></span>
+            <nav id="nav-section">
+              <a href="/">
+                <img src="./img/nav-logo.png" alt="Casa D Velas Logotipo" />
+              </a>
+              <input type="checkbox" id="hmb-menu" className="hmb-menu" />
+              <label htmlFor="hmb-menu" className="hmb-label">
+                <span className="bar bar1" />
+                <span className="bar bar2" />
+                <span className="bar bar3" />
               </label>
-              <ul class="nav-ul">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="products-class">
-                      <a href="pages/products.html">Productos</a>
-                      <ul class="sublist">
-                          <li><a href="#">Velas</a></li>  <!--- El href no esta enlazado debido a posibles modificaciones --->
-                          <li><a href="#">Refill</a></li>
-                          <li><a href="#">Cocina</a></li>
-                          <li><a href="#">Botellones</a></li>
-                      </ul>
+              <ul className="nav-ul">
+                <li className="nav-li">
+                  <a to="/" className="li-a">
+                    Inicio
+                  </a>
+                </li>
+                <span className="nav-span" />
+                <li className="nav-li dropdown">
+                  <a href="../src/pages/products.html" className="li-a down">
+                    Productos
+                  </a>
+                  <span className="nav-span products-span middle-span" />
+                </li>
+                <span className="nav-span middle-span" />
+                <li className="nav-li">
+                  <a href="../src/pages/cart.html" className="li-a down">
+                    Carrito
+                  </a>
+                </li>
+                <span className="nav-span middle-span" />
+                <li className="nav-li">
+                    <a href="../src/pages/contact.html" className="li-a down">
+                      Contact
+                    </a>
                   </li>
-                  <li><a href="pages/cart.html">Carrito</a></li>
-                  <li><a href="pages/contact.html">Contacto</a></li>
               </ul>
             </nav>
-        </header>
+          </header>
         <main id="main-section">
             <div class="main-container parallax"> <!--- Contenedor de seccion principal con fondo de pantalla en efecto parallax--->
                 <h1>CASA D VELAS</h1>

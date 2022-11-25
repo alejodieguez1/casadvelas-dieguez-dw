@@ -7,38 +7,18 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  #header-section #nav-section img {
+  #header-section #nav-section a img {
     margin-left: 10px;
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: auto;
     cursor: pointer;
   }
-  #header-section #nav-section img:hover {
+  #header-section #nav-section a img:hover {
     cursor: pointer;
-  }
-  #header-section #nav-section .widgetContainer {
-    align-self: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #d9c09f;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-  }
-  #header-section #nav-section .widgetContainer img {
-    margin-left: 0px;
-    width: 15px;
-    height: 15px;
   }
   .link-a {
     text-decoration: none;
     color: #464646;
-  }
-  .widgetContainer:hover {
-    transform: scale(1.1);
-    transition: 0.25s;
   }
   #header-section #nav-section .hmb-menu {
     display: none;
@@ -94,26 +74,6 @@
     text-decoration: none;
     font-family: "Recoleta";
     cursor: pointer;
-  }
-  .dropdown {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    transition: 0.3s;
-    overflow: hidden;
-    align-content: center;
-    z-index: 200;
-    max-height: 250px;
-    height: 250px;
-  }
-  .dropdown-content a {
-    margin-top: 12px;
   }
   #header-section #nav-section .nav-ul li a:hover {
     text-decoration: underline;

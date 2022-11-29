@@ -24,7 +24,7 @@
   #header-section #nav-section #hmb-menu {
     display: none;
   }
-  .nav-ul {
+  #nav-section .nav-ul {
     display: inline-block;
     float: right;
     margin-right: 30px;

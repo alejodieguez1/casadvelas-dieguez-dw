@@ -1,15 +1,20 @@
+@font-face {
+  font-family: "Recoleta";
+  src: url(../assets/fonts/RecoletaAlt-Medium.woff) format("woff");
+}
 #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646;
     height: 100px;
+    border-bottom: 2px solid #d8c09e;
   }
   #header-section #nav-section #img-a {
     color: transparent;
   }
   #header-section #nav-section a img {
     margin-left: 30px;
-    margin-top: 20px;
-    width: 30px;
+    margin-top: 25px;
+    width: 25px;
     height: auto;
     cursor: pointer;
   }
@@ -22,7 +27,20 @@
   .nav-ul {
     display: inline-block;
     float: right;
+    margin-right: 30px;
+    margin-top: 38px;
   }
   .nav-ul .nav-li {
     display: inline-block;
+    margin-left: 20px;
+  }
+  .nav-li .li-a {
+    text-decoration: none;
+    color: #d8c09e;
+    font-size: 1.2rem;
+    font-family: "Recoleta";
+  }
+  .nav-li .li-a:hover {
+    transition: 1.5s;
+    border-bottom: 1.5px solid #d8c09e;
   }

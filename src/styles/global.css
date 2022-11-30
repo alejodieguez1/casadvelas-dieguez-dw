@@ -41,6 +41,41 @@
     font-family: "Recoleta";
   }
   .nav-li .li-a:hover {
-    transition: 1.5s;
-    border-bottom: 1.5px solid #d8c09e;
+    transition: 0.55s;
+    border-bottom: 1.5px solid #aa867b;
+    color: #aa867b;
+  }
+
+  #main-section {
+    height: 500px;
+  }
+  #slider-section {
+    height: 500px;
+  }
+
+  #footer-section {
+    background-color: #fff;
+    height: 100px;
+    box-shadow: 0px 0px 3px #464646;
+    border-top: 2px solid #d8c09e;
+  }
+  .footer-container img {
+    height: auto;
+    width: 25px;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+  .footer-container .social-logos {
+    float: right;
+    margin-right: 30px;
+    margin-top: 38px;
+  }
+  .social-logos a {
+    font-size: 1.4rem;
+    margin-left: 25px;
+    color: #d8c09e;
+  }
+  .social-logos a:hover {
+    color: #aa867b;
+    transition: 0.55s;
   }

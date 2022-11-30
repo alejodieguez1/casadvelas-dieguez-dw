@@ -1,0 +1,43 @@
+#main-section .parallax {
+  /* The image used */
+  background-image: url("../assets/parallax-wallpaper.jpg");
+  /* Set a specific height */
+  min-height: 600px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-section .parallax img {
+  width: 270px;
+}
+.parallax {
+  background-image: url("../assets/parallax-wallpaper.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax h2 {
+  color: #fff;
+  font-family: "Recoleta";
+  letter-spacing: 9px;
+}
+#description-section {
+  background-color: #ffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
+}
+#description-section .container {
+  padding: 30px;
+}
+#description-section .container p,
+#description-section .container ul {
+  color: #d9c09f;
+  font-family: "Recoleta";
+  font-size: 1.4rem;
+}

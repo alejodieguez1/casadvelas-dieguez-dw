@@ -3,79 +3,71 @@
   src: url(../assets/fonts/RecoletaAlt-Medium.woff) format("woff");
 }
 #header-section {
-    background-color: #ffff;
-    box-shadow: 0px 0px 5px #464646;
-    height: 100px;
-    border-bottom: 2px solid #d8c09e;
-  }
-  #header-section #nav-section #img-a {
-    color: transparent;
-  }
-  #header-section #nav-section a img {
-    margin-left: 30px;
-    margin-top: 25px;
-    width: 25px;
-    height: auto;
-    cursor: pointer;
-  }
-  #header-section #nav-section a img:hover {
-    cursor: pointer;
-  }
-  #header-section #nav-section #hmb-menu {
-    display: none;
-  }
-  #nav-section .nav-ul {
-    display: inline-block;
-    float: right;
-    margin-right: 30px;
-    margin-top: 38px;
-  }
-  .nav-ul .nav-li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  .nav-li .li-a {
-    text-decoration: none;
-    color: #d8c09e;
-    font-size: 1.2rem;
-    font-family: "Recoleta";
-  }
-  .nav-li .li-a:hover {
-    transition: 0.55s;
-    border-bottom: 1.5px solid #aa867b;
-    color: #aa867b;
-  }
-
-  #main-section {
-    height: 500px;
-  }
-  #slider-section {
-    height: 500px;
-  }
-
-  #footer-section {
-    background-color: #fff;
-    height: 100px;
-    box-shadow: 0px 0px 3px #464646;
-    border-top: 2px solid #d8c09e;
-  }
-  .footer-container img {
-    height: auto;
-    width: 25px;
-    margin-left: 30px;
-    margin-top: 25px;
-  }
-  .footer-container .social-logos {
-    float: right;
-    margin-right: 30px;
-    margin-top: 38px;
-  }
-  .social-logos a {
-    font-size: 1.4rem;
-    margin-left: 25px;
-    color: #d8c09e;
-  }
-  .social-logos a:hover {
-    color: #aa867b;
-    transition: 0.55s;
-  }
+  background-color: #ffff;
+  box-shadow: 0px 0px 5px #464646;
+  height: 100px;
+  border-bottom: 2px solid #d8c09e;
+}
+#header-section #nav-section #img-a {
+  color: transparent;
+}
+#header-section #nav-section a img {
+  margin-left: 30px;
+  margin-top: 25px;
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+#header-section #nav-section a img:hover {
+  cursor: pointer;
+}
+#header-section #nav-section #hmb-menu {
+  display: none;
+}
+#nav-section .nav-ul {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  margin-top: 38px;
+}
+.nav-ul .nav-li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.nav-li .li-a {
+  text-decoration: none;
+  color: #d8c09e;
+  font-size: 1.2rem;
+  font-family: "Recoleta";
+}
+.nav-li .li-a:hover {
+  transition: 0.55s;
+  border-bottom: 1.5px solid #aa867b;
+  color: #aa867b;
+}
+#footer-section {
+  background-color: #fff;
+  height: 100px;
+  box-shadow: 0px 0px 3px #464646;
+  border-top: 2px solid #d8c09e;
+}
+.footer-container img {
+  height: auto;
+  width: 25px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+.footer-container .social-logos {
+  float: right;
+  margin-right: 30px;
+  margin-top: 38px;
+}
+.social-logos a {
+  font-size: 1.4rem;
+  margin-left: 25px;
+  color: #d8c09e;
+}
+.social-logos a:hover {
+  color: #aa867b;
+  transition: 0.55s;
+}

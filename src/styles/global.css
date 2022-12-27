@@ -5,49 +5,6 @@
 h2 {
   font-size: 2rem;
 }
-/* #header-section {
-  background-color: #ffff;
-  box-shadow: 0px 0px 5px #464646;
-  height: 100px;
-  border-bottom: 2px solid #d8c09e;
-}
-#header-section #nav-section #img-a {
-  color: transparent;
-}
-#header-section #nav-section a img {
-  margin-left: 30px;
-  margin-top: 25px;
-  width: 25px;
-  height: auto;
-  cursor: pointer;
-}
-#header-section #nav-section a img:hover {
-  cursor: pointer;
-}
-#header-section #nav-section #hmb-menu {
-  display: none;
-}
-#nav-section .nav-ul {
-  display: inline-block;
-  float: right;
-  margin-right: 30px;
-  margin-top: 38px;
-}
-.nav-ul .nav-li {
-  display: inline-block;
-  margin-left: 20px;
-}
-.nav-li .li-a {
-  text-decoration: none;
-  color: #d8c09e;
-  font-size: 1.2rem;
-  font-family: "Recoleta";
-}
-.nav-li .li-a:hover {
-  transition: 0.55s;
-  border-bottom: 1.5px solid #aa867b;
-  color: #aa867b;
-} */
 #header-section {
   background-color: #ffff;
   box-shadow: 0px 0px 5px #464646;
@@ -128,9 +85,6 @@ h2 {
   max-height: 550px;
   height: 100%;
   box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.233);
-}
-#hmb-menu:checked ~ .spacer-bar {
-  color: #ffff;
 }
 #header-section #nav-section #hmb-menu:checked ~ .hmb-label .bar1 {
   transform: translate(0, 6.2px) rotate(45deg);
@@ -220,7 +174,7 @@ h2 {
     border-bottom: 1.5px solid #aa867b;
     color: #aa867b;
   }
-  .nav-ul .nav-span {
+  #header-section #nav-section .nav-ul .nav-span {
     display: none;
   }
 }

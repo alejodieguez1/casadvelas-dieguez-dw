@@ -31,11 +31,11 @@
   background-color: #ffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
 }
-#description-section .container {
+#description-section .description-container {
   padding: 30px;
 }
-#description-section .container p,
-#description-section .container ul {
+#description-section .description-container p,
+#description-section .description-container ul {
   color: #d9c09f;
   font-family: "Recoleta";
   font-size: 1.4rem;

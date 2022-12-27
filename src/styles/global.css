@@ -114,8 +114,7 @@ h2 {
   margin-top: 20px;
 }
 #header-section #nav-section .nav-ul li {
-  margin: 20px;
-  margin-top: 50px;
+  margin: 50px 0px 40px 0px;
   list-style: none;
 }
 #header-section #nav-section .nav-ul li a {
@@ -131,7 +130,7 @@ h2 {
   transition: 0.25s;
 }
 #header-section #nav-section #hmb-menu:checked ~ .nav-ul {
-  max-height: 470px;
+  max-height: 550px;
   height: 100%;
   box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.233);
 }

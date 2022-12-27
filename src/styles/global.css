@@ -215,7 +215,7 @@ h2 {
     display: inline-block;
     margin: 38px 15px 0px 15px;
   }
-  .nav-li .li-a:hover {
+  #header-section #nav-section .nav-li .li-a:hover {
     transition: 0.55s;
     border-bottom: 1.5px solid #aa867b;
     color: #aa867b;

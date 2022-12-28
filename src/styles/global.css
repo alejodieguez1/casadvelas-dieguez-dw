@@ -123,10 +123,6 @@ h2 {
   margin-left: 25px;
   color: #d8c09e;
 }
-.social-logos a:hover {
-  color: #aa867b;
-  transition: 0.55s;
-}
 
 .parallax h2 {
   color: #fff;
@@ -176,5 +172,9 @@ h2 {
   }
   #header-section #nav-section .nav-ul .nav-span {
     display: none;
+  }
+  #footer-section .footer-container .social-logos a:hover {
+    color: #aa867b;
+    transition: 0.55s;
   }
 }

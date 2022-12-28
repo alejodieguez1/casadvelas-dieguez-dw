@@ -86,4 +86,9 @@
   .product-container {
     margin: 20px 1%;
   }
+  .product-container .product .product-btn:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+  }
 }

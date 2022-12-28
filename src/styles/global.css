@@ -16,7 +16,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  transition: opacity 0.75s, visibility 0.75s; 
+  transition: opacity 0.75s, visibility 0.75s;
 }
 .loader--hidden {
   opacity: 0;
@@ -205,6 +205,10 @@ h2 {
   }
 }
 @keyframes loading {
-  from { transform: rotate(0turn);}
-  to { transform: rotate(1turn);}
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }

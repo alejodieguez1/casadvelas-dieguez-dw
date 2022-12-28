@@ -7,7 +7,7 @@ h2 {
 }
 #header-section {
   background-color: #ffff;
-  box-shadow: 0px 0px 5px #464646;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
   height: 100px;
   border-bottom: 2px solid #d8c09e;
 }

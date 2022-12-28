@@ -5,6 +5,32 @@
 h2 {
   font-size: 2rem;
 }
+.loader {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: opacity 0.75s, visibility 0.75s; 
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #d9c09f;
+  border-top-color: #aa867b;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
 #header-section {
   background-color: #ffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
@@ -177,4 +203,8 @@ h2 {
     color: #aa867b;
     transition: 0.55s;
   }
+}
+@keyframes loading {
+  from { transform: rotate(0turn);}
+  to { transform: rotate(1turn);}
 }

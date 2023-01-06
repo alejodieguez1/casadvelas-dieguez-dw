@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Recoleta";
+  src: url(../../assets/fonts/RecoletaAlt-Medium.woff) format("woff"); }
+
+h2 {
+  font-size: 2rem; }
+
+#header-section {
+  background-color: #ffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+  height: 100px;
+  border-bottom: 2px solid #d8c09e; }
+  #header-section #nav-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #header-section #nav-section img {
+      margin-left: 38px;
+      margin-top: 30px;
+      width: 25px;
+      height: auto;
+      cursor: pointer; }
+      #header-section #nav-section img:hover {
+        cursor: pointer; }
+    #header-section #nav-section .hmb-menu {
+      display: none; }
+    #header-section #nav-section .hmb-label {
+      float: right;
+      margin: 41px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-self: center; }
+      #header-section #nav-section .hmb-label .bar {
+        background-color: #d9c09f;
+        margin: 2px;
+        height: 2px;
+        width: 19px;
+        border-radius: 5px; }
+    #header-section #nav-section .nav-ul {
+      position: absolute;
+      max-height: 0;
+      transition: 0.3s ease;
+      background-color: #ffff;
+      overflow: hidden;
+      width: 100%;
+      z-index: 100;
+      margin: 0;
+      top: 102px;
+      padding: 0px;
+      text-align: center; }
+      #header-section #nav-section .nav-ul .nav-span {
+        display: inline-block;
+        height: 2px;
+        width: 40%;
+        background-color: #d9c09f; }
+      #header-section #nav-section .nav-ul .middle-span {
+        width: 80%; }
+      #header-section #nav-section .nav-ul .products-span {
+        align-self: center;
+        margin-top: 20px; }
+      #header-section #nav-section .nav-ul li {
+        margin: 50px 0px 40px 0px;
+        list-style: none; }
+        #header-section #nav-section .nav-ul li a {
+          font-size: 1.3rem;
+          color: #d9c09f;
+          text-decoration: none;
+          font-family: "Recoleta";
+          cursor: pointer; }
+    #header-section #nav-section #hmb-menu:checked ~ .nav-ul {
+      max-height: 550px;
+      height: 100%;
+      box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.233); }
+    #header-section #nav-section #hmb-menu:checked ~ .hmb-label .bar1 {
+      transform: translate(0, 6.2px) rotate(45deg);
+      transition: 0.2s ease-out;
+      width: 20px; }
+    #header-section #nav-section #hmb-menu:checked ~ .hmb-label .bar2 {
+      opacity: 0;
+      transform: translate(-10px);
+      transition: 0.2s; }
+    #header-section #nav-section #hmb-menu:checked ~ .hmb-label .bar3 {
+      transform: translate(0, -6.2px) rotate(-45deg);
+      transition: 0.2s ease-out;
+      width: 20px; }
+
+@media all and (min-width: 768px) {
+  #header-section {
+    background-color: #ffff;
+    box-shadow: 0px 0px 5px #464646;
+    height: 100px;
+    border-bottom: 2px solid #d8c09e; }
+    #header-section #nav-section .hmb-label {
+      display: none; }
+    #header-section #nav-section .nav-ul {
+      position: initial;
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      max-height: 100%;
+      width: 438px; }
+      #header-section #nav-section .nav-ul .nav-li {
+        display: inline-block;
+        margin: 38px 15px 0px 15px; }
+        #header-section #nav-section .nav-ul .nav-li .li-a:hover {
+          transition: 0.55s;
+          border-bottom: 1.5px solid #aa867b;
+          color: #aa867b; }
+      #header-section #nav-section .nav-ul .nav-span {
+        display: none; } }
+
+#footer-section {
+  background-color: #fff;
+  height: 100px;
+  box-shadow: 0px 0px 3px #464646;
+  border-top: 2px solid #d8c09e; }
+  #footer-section .footer-container img {
+    height: auto;
+    width: 25px;
+    margin-left: 30px;
+    margin-top: 25px; }
+  #footer-section .footer-container .social-logos {
+    float: right;
+    margin-right: 30px;
+    margin-top: 38px; }
+    #footer-section .footer-container .social-logos a {
+      font-size: 1.4rem;
+      margin-left: 25px;
+      color: #d8c09e; }
+
+@media all and (min-width: 768px) {
+  #footer-section .footer-container .social-logos a:hover {
+    color: #aa867b;
+    transition: 0.55s; } }
+
+.parralax {
+  background-image: url("../assets/parallax-wallpaper.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .parralax h2 {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Recoleta";
+    letter-spacing: 9px;
+    display: inline-block;
+    margin-top: 270px;
+    text-transform: uppercase; }
+
+.loader {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: opacity 0.75s, visibility 0.75s; }
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden; }
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #d9c09f;
+  border-top-color: #aa867b;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite; }
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn); }
+  to {
+    transform: rotate(1turn); } }

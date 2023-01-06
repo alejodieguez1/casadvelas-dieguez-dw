@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Recoleta";
+    src: url(../../assets/fonts/RecoletaAlt-Medium.woff) format("woff");
+}
+
+h2 {
+    font-size: 2rem;
+  }
+@import "components/_navbar";
+@import "components/_footer";
+@import "components/_headers";
+@import "components/_loader";

@@ -1,0 +1,130 @@
+#header-section {
+    background-color: #ffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+    height: 100px;
+    border-bottom: 2px solid #d8c09e;
+    #nav-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            margin-left: 38px;
+            margin-top: 30px;
+            width: 25px;
+            height: auto;
+            cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .hmb-menu {
+            display: none;
+        }
+        .hmb-label {
+            float: right;
+            margin: 41px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            .bar {
+                background-color: #d9c09f;
+                margin: 2px;
+                height: 2px;
+                width: 19px;
+                border-radius: 5px;
+            }
+        }
+        .nav-ul {
+            position: absolute;
+            max-height: 0;
+            transition: 0.3s ease;
+            background-color: #ffff;
+            overflow: hidden;
+            width: 100%;
+            z-index: 100;
+            margin: 0;
+            top: 102px;
+            padding: 0px;
+            text-align: center;
+            .nav-span {
+                display: inline-block;
+                height: 2px;
+                width: 40%;
+                background-color: #d9c09f;
+            }
+            .middle-span {
+                width: 80%;
+            }
+            .products-span {
+                align-self: center;
+                margin-top: 20px;
+            }
+            li {
+                margin: 50px 0px 40px 0px;
+                list-style: none;
+                a{
+                    font-size: 1.3rem;
+                    color: #d9c09f;
+                    text-decoration: none;
+                    font-family: "Recoleta";
+                    cursor: pointer;
+                }
+            }
+        }
+        #hmb-menu:checked ~ .nav-ul {
+            max-height: 550px;
+            height: 100%;
+            box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.233);
+        }
+        #hmb-menu:checked ~ .hmb-label .bar1 {
+            transform: translate(0, 6.2px) rotate(45deg);
+            transition: 0.2s ease-out;
+            width: 20px;
+        }
+        #hmb-menu:checked ~ .hmb-label .bar2 {
+            opacity: 0;
+            transform: translate(-10px);
+            transition: 0.2s;
+        }
+        #hmb-menu:checked ~ .hmb-label .bar3 {
+            transform: translate(0, -6.2px) rotate(-45deg);
+            transition: 0.2s ease-out;
+            width: 20px;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    #header-section {
+        background-color: #ffff;
+        box-shadow: 0px 0px 5px #464646;
+        height: 100px;
+        border-bottom: 2px solid #d8c09e;
+        #nav-section {
+            .hmb-label {
+                display: none;
+            }
+            .nav-ul {
+                position: initial;
+                display: flex;
+                flex-direction: row;
+                background-color: transparent;
+                max-height: 100%;
+                width: 438px;
+                .nav-li {
+                    display: inline-block;
+                    margin: 38px 15px 0px 15px;
+                    .li-a:hover {
+                        transition: 0.55s;
+                        border-bottom: 1.5px solid #aa867b;
+                        color: #aa867b;
+                    }
+                }
+                .nav-span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

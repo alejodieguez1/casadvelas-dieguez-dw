@@ -29,7 +29,7 @@ Once the dependencies are installed, run the following command
 
 | library                                                          | used                      |
 | ---------------------------------------------------------------- | ------------------------- |
-| [SASS](https://reactrouter.com/)                  | CSS Preprocessor     |
+| [SASS](https://sass-lang.com/)                  | CSS Preprocessor     |
 
 ### Author: Alejo Dieguez
 

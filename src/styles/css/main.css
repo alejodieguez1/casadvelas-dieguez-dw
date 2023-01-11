@@ -182,3 +182,87 @@ h2 {
     transform: rotate(0turn); }
   to {
     transform: rotate(1turn); } }
+
+#main-section .parallax {
+  background-image: url("../../assets/parallax-wallpaper.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #main-section .parallax img {
+    width: 270px;
+    margin-top: 230px; }
+
+#description-section {
+  background-color: #ffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
+  #description-section .description-container {
+    padding: 30px; }
+    #description-section .description-container p, #description-section .description-container ul {
+      color: #d9c09f;
+      font-family: "Recoleta";
+      font-size: 1.4rem; }
+
+#middle-section .parallax {
+  background-image: url("../../assets/parallax-wallpaper.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #middle-section .parallax h2 {
+    color: #fff;
+    font-family: "Recoleta";
+    letter-spacing: 9px;
+    display: inline-block;
+    margin-top: 130px;
+    text-transform: uppercase; }
+
+#products-section {
+  background-color: #E9DCC9; }
+  #products-section .products-container {
+    padding: 20px; }
+    #products-section .products-container .product-container {
+      padding: 20px;
+      margin: 20px 0px;
+      background-color: #fff;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
+      #products-section .products-container .product-container .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #products-section .products-container .product-container .product .product-img {
+          height: auto;
+          width: 100%;
+          max-width: 600px; }
+        #products-section .products-container .product-container .product .product-h2 {
+          margin: 0;
+          margin-top: 20px; }
+        #products-section .products-container .product-container .product .product-p {
+          font-size: 1.2rem;
+          margin-top: 10px; }
+        #products-section .products-container .product-container .product .product-btn {
+          background-color: #d9c09f;
+          color: #fff;
+          border: none;
+          width: 220px;
+          height: 70px;
+          font-family: 'Recoleta';
+          font-size: 1.2rem; }
+
+@media all and (min-width: 1024px) {
+  #products-section .products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #products-section .products-container .product-container {
+      margin: 20px 1%; }
+      #products-section .products-container .product-container .product .product-img {
+        width: 60%;
+        max-width: 100%; }
+      #products-section .products-container .product-container .product .product-btn:hover {
+        transform: scale(1.03);
+        transition: 0.5s;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418); } }

@@ -3,7 +3,39 @@
   src: url(../../assets/fonts/RecoletaAlt-Medium.woff) format("woff"); }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
+
+.loader {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: opacity 0.75s, visibility 0.75s; }
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden; }
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #d9c09f;
+  border-top-color: #aa867b;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite; }
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn); }
+  to {
+    transform: rotate(1turn); } }
 
 #header-section {
   background-color: #ffff;
@@ -134,93 +166,6 @@ h2 {
     color: #aa867b;
     transition: 0.55s; } }
 
-.parralax {
-  background-image: url("../assets/parallax-wallpaper.jpg");
-  min-height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center; }
-  .parralax h2 {
-    color: #fff;
-    font-weight: 400;
-    font-family: "Recoleta";
-    letter-spacing: 9px;
-    display: inline-block;
-    margin-top: 270px;
-    text-transform: uppercase; }
-
-.loader {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  transition: opacity 0.75s, visibility 0.75s; }
-
-.loader--hidden {
-  opacity: 0;
-  visibility: hidden; }
-
-.loader::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #d9c09f;
-  border-top-color: #aa867b;
-  border-radius: 50%;
-  animation: loading 0.75s ease infinite; }
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn); }
-  to {
-    transform: rotate(1turn); } }
-
-#main-section .parallax {
-  background-image: url("../../assets/parallax-wallpaper.jpg");
-  min-height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center; }
-  #main-section .parallax img {
-    width: 270px;
-    margin-top: 230px; }
-
-#description-section {
-  background-color: #ffff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
-  #description-section .description-container {
-    padding: 30px; }
-    #description-section .description-container p, #description-section .description-container ul {
-      color: #d9c09f;
-      font-family: "Recoleta";
-      font-size: 1.4rem; }
-
-#middle-section .parallax {
-  background-image: url("../../assets/parallax-wallpaper.jpg");
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center; }
-  #middle-section .parallax h2 {
-    color: #fff;
-    font-family: "Recoleta";
-    letter-spacing: 9px;
-    display: inline-block;
-    margin-top: 130px;
-    text-transform: uppercase; }
-
 #products-section {
   background-color: #E9DCC9; }
   #products-section .products-container {
@@ -266,3 +211,66 @@ h2 {
         transform: scale(1.03);
         transition: 0.5s;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418); } }
+
+#main-section .parallax {
+  background-image: url("../../assets/parallax-wallpaper.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #main-section .parallax img {
+    width: 270px;
+    margin-top: 230px; }
+
+#description-section {
+  background-color: #ffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
+  #description-section .description-container {
+    padding: 30px; }
+    #description-section .description-container p, #description-section .description-container ul {
+      color: #d9c09f;
+      font-family: "Recoleta";
+      font-size: 1.4rem; }
+
+#middle-section .parallax {
+  background-image: url("../../assets/parallax-wallpaper.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #middle-section .parallax h2 {
+    color: #fff;
+    font-family: "Recoleta";
+    letter-spacing: 9px;
+    display: inline-block;
+    margin-top: 130px;
+    text-transform: uppercase; }
+
+@media all and (min-width: 1024px) {
+  #middle-section .parallax h2 {
+    font-size: 2rem; } }
+
+#productsBody-container #intro-section .intro-container {
+  background-image: url("../../assets/parallax-wallpaper.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #productsBody-container #intro-section .intro-container .intro-h2 {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Recoleta";
+    letter-spacing: 9px;
+    display: inline-block;
+    margin-top: 270px;
+    text-transform: uppercase; }
+
+@media all and (min-width: 1024px) {
+  #productsBody-container #intro-section .intro-container .intro-h2 {
+    font-size: 2rem; } }

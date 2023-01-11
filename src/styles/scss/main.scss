@@ -4,10 +4,11 @@
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-@import "components/_navbar";
-@import "components/_footer";
-@import "components/_headers";
-@import "components/_loader";
-@import "views/_index.scss";
+@import "components/__loader";
+@import "components/__navbar";
+@import "components/__footer";
+@import "components/_products_section";
+@import "views/__index.scss";
+@import "views/__products";

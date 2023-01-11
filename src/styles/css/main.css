@@ -167,7 +167,7 @@ h2 {
     transition: 0.55s; } }
 
 #products-section {
-  background-color: #E9DCC9; }
+  background-color: #e9dcc9; }
   #products-section .products-container {
     padding: 20px; }
     #products-section .products-container .product-container {
@@ -195,7 +195,7 @@ h2 {
           border: none;
           width: 220px;
           height: 70px;
-          font-family: 'Recoleta';
+          font-family: "Recoleta";
           font-size: 1.2rem; }
 
 @media all and (min-width: 1024px) {
@@ -229,7 +229,8 @@ h2 {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
   #description-section .description-container {
     padding: 30px; }
-    #description-section .description-container p, #description-section .description-container ul {
+    #description-section .description-container p,
+    #description-section .description-container ul {
       color: #d9c09f;
       font-family: "Recoleta";
       font-size: 1.4rem; }
@@ -273,4 +274,25 @@ h2 {
 
 @media all and (min-width: 1024px) {
   #productsBody-container #intro-section .intro-container .intro-h2 {
+    font-size: 2rem; } }
+
+#cartBody-container #intro-section .intro-container {
+  background-image: url("../../assets/parallax-wallpaper.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #cartBody-container #intro-section .intro-container .intro-h2 {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Recoleta";
+    letter-spacing: 9px;
+    display: inline-block;
+    margin-top: 270px;
+    text-transform: uppercase; }
+
+@media all and (min-width: 1024px) {
+  #cartBody-container #intro-section .intro-container .intro-h2 {
     font-size: 2rem; } }

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/f784d185d6.js" crossorigin="anonymous"></script>    
     <link rel="icon" href="../../public/img/nav-logo.png">
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
     <title>Casa D Velas - Contact</title>
 </head>
 <body>
@@ -59,16 +59,26 @@
             </div>
         </section>
         <main id="main-section">
-            <p>Si necesitas hacer pedidos por mayor podes dejarnos tu caso en este formulario o contactarnos por nuestro whatsapp</p>
-            <form class="contact-form" action="">  <!--- Formulario de contacto en caso de algun problema, etc --->
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre completo aqui">
-                <br>
-                <input type="email" name="apellido" placeholder="tuemail@dominio.com">
-                <br>
-                <input type="text" name="data" placeholder="Escribe aqui lo que necesites">
-                <input type="submit" name="enviar">
-                <input type="reset" name="reset">
-        </form>
+          <div class="contact-container">
+            <h4 class="contact-title">Dejanos tu informacion y nos contactaremos mediante Whatsapp</h4>
+            <form class="card-form">
+              <div class="input">
+                <input type="text" class="input-field" required/>
+                <label class="input-label">Nombre Completo</label>
+              </div>
+                    <div class="input">
+                <input type="text" class="input-field" required/>
+                <label class="input-label">Email</label>
+              </div>
+                    <div class="input">
+                <input type="text" class="input-field" required/>
+                <label class="input-label">Mensaje</label>
+              </div>
+              <div class="action">
+                <button class="action-button">Envia tus Datos!</button>
+              </div>
+            </form>
+          </div>
         </main>
         <footer id="footer-section">
             <div class="footer-bar"></div>

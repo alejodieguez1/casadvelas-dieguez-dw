@@ -145,7 +145,6 @@ h2 {
 #footer-section {
   background-color: #fff;
   height: 100px;
-  box-shadow: 0px 0px 3px #464646;
   border-top: 2px solid #d8c09e; }
   #footer-section .footer-container img {
     height: auto;
@@ -182,7 +181,8 @@ h2 {
         #products-section .products-container .product-container .product .product-img {
           height: auto;
           width: 100%;
-          max-width: 600px; }
+          max-width: 600px;
+          border-radius: 1%; }
         #products-section .products-container .product-container .product .product-h2 {
           margin: 0;
           margin-top: 20px; }
@@ -196,7 +196,9 @@ h2 {
           width: 220px;
           height: 70px;
           font-family: "Recoleta";
-          font-size: 1.2rem; }
+          font-size: 1.2rem;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+          border-radius: 2%; }
 
 @media all and (min-width: 1024px) {
   #products-section .products-container {
@@ -210,7 +212,7 @@ h2 {
       #products-section .products-container .product-container .product .product-btn:hover {
         transform: scale(1.03);
         transition: 0.5s;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418); } }
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418); } }
 
 #main-section .parallax {
   background-image: url("../../assets/parallax-wallpaper.jpg");
@@ -295,4 +297,78 @@ h2 {
 
 @media all and (min-width: 1024px) {
   #cartBody-container #intro-section .intro-container .intro-h2 {
+    font-size: 2rem; } }
+
+#contactBody-container #intro-section .intro-container {
+  background-image: url("../../assets/parallax-wallpaper.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #contactBody-container #intro-section .intro-container .intro-h2 {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Recoleta";
+    letter-spacing: 9px;
+    display: inline-block;
+    margin-top: 270px;
+    text-transform: uppercase; }
+
+#contactBody-container #main-section {
+  background-color: #e9dcc9;
+  padding: 20px; }
+  #contactBody-container #main-section .contact-container {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233); }
+    #contactBody-container #main-section .contact-container .contact-title {
+      font-family: "Recoleta";
+      font-weight: 400;
+      margin-left: 20px;
+      color: #aa867b; }
+    #contactBody-container #main-section .contact-container .card-form {
+      padding: 1rem 1rem 0; }
+    #contactBody-container #main-section .contact-container .input {
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      padding-top: 1.5rem; }
+      #contactBody-container #main-section .contact-container .input + .input {
+        margin-top: 1.5rem; }
+    #contactBody-container #main-section .contact-container .input-label {
+      color: #8597a3;
+      position: absolute;
+      top: 1.5rem;
+      transition: .25s ease; }
+    #contactBody-container #main-section .contact-container .input-field {
+      border: 0;
+      z-index: 1;
+      background-color: transparent;
+      border-bottom: 2px solid #eee;
+      font-size: 1.125rem;
+      padding: .25rem 0; }
+      #contactBody-container #main-section .contact-container .input-field:focus, #contactBody-container #main-section .contact-container .input-field:valid {
+        outline: 0;
+        border-bottom-color: #aa867b; }
+        #contactBody-container #main-section .contact-container .input-field:focus + .input-label, #contactBody-container #main-section .contact-container .input-field:valid + .input-label {
+          color: #aa867b;
+          transform: translateY(-1.5rem); }
+    #contactBody-container #main-section .contact-container .action {
+      margin-top: 2rem; }
+    #contactBody-container #main-section .contact-container .action-button {
+      font-size: 1.25rem;
+      padding: 1em;
+      width: 100%;
+      font-weight: 500;
+      background-color: #aa867b;
+      border-radius: 2%;
+      color: #FFF;
+      border: 0; }
+      #contactBody-container #main-section .contact-container .action-button:focus {
+        outline: 0; }
+
+@media all and (min-width: 1024px) {
+  #contactBody-container #intro-section .intro-container .intro-h2 {
     font-size: 2rem; } }

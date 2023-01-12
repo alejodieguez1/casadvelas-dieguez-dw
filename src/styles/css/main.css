@@ -327,6 +327,7 @@ h2 {
       font-family: "Recoleta";
       font-weight: 400;
       margin-left: 20px;
+      margin-bottom: 0;
       color: #aa867b; }
     #contactBody-container #main-section .contact-container .card-form {
       padding: 1rem 1rem 0; }

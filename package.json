@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/alejodieguez1/casadvelas-dieguez-dw/issues"
   },
-  "homepage": "https://github.com/alejodieguez1/casadvelas-dieguez-dw#readme",
+  "homepage": "https://github.com/alejodieguez1/casadvelas-dieguez-dw#index.html",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"

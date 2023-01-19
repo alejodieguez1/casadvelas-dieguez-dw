@@ -21,7 +21,7 @@
     }
   }
 }
-@media all and (min-width: 768px) {
+@include tablet {
   #footer-section {
     .footer-container {
       .social-logos {

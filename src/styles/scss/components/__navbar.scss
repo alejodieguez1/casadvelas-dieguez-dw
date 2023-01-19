@@ -94,8 +94,7 @@
     }
   }
 }
-
-@media all and (min-width: 768px) {
+@include tablet {
   #header-section {
     background-color: #ffff;
     box-shadow: 0px 0px 5px #464646;

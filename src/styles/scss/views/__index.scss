@@ -45,7 +45,7 @@
     }
   }
 }
-@media all and (min-width: 1024px) {
+@include desktop {
   #middle-section {
     .parallax {
       h2 {

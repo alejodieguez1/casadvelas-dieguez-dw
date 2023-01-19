@@ -91,7 +91,7 @@
     }
   }
 }
-@media all and (min-width: 1024px) {
+@include desktop {
   #contactBody-container {
     #intro-section {
       .intro-container {

@@ -6,6 +6,7 @@
 h2 {
   font-size: 1.5rem;
 }
+@import "utilities/__mixins";
 @import "components/__loader";
 @import "components/__navbar";
 @import "components/__footer";

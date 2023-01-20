@@ -1,0 +1,84 @@
+#refillBody-container {
+  #intro-section {
+    .intro-container {
+      background-image: url("../../assets/parallax-wallpaper.jpg");
+      min-height: 600px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      .intro-h2 {
+        color: #fff;
+        font-weight: 400;
+        font-family: "Recoleta";
+        letter-spacing: 9px;
+        display: inline-block;
+        margin-top: 270px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  #main-section {
+    padding: 20px;
+    background-color: #e9dcc9;
+    .refill-container {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+      .refill-title {
+        font-family: "Recoleta";
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #aa867b;
+      }
+      .refill-p {
+        font-family: "Recoleta";
+        font-size: 0.8rem;
+      }
+      .refill-img {
+        height: auto;
+        width: 100%;
+      }
+      .refill-ul {
+        font-family: "Recoleta";
+        color: #aa867b;
+        font-size: 1rem;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+@include tablet {
+  #refillBody-container {
+    #intro-section {
+      .intro-container {
+        .intro-h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+    #main-section {
+        .refill-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .refill-title {
+                font-size: 1.3rem;
+            }
+            .refill-p {
+                margin: 30px 0px;
+                font-size: 1rem;
+            }
+            .refill-img {
+                max-width: 1000px;
+            }
+            .refill-ul {
+                margin-top: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+  }
+}

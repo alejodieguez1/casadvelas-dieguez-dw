@@ -73,7 +73,7 @@
       }
     }
     #hmb-menu:checked ~ .nav-ul {
-      max-height: 550px;
+      max-height: 680px;
       height: 100%;
       box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.233);
     }
@@ -113,7 +113,7 @@
         width: 438px;
         .nav-li {
           display: inline-block;
-          margin: 38px 15px 0px 15px;
+          margin: 38px 15px 0px 0px;
           .li-a:hover {
             transition: 0.55s;
             border-bottom: 1.5px solid #aa867b;
